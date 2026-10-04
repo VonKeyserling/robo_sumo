@@ -1,0 +1,12 @@
+{
+  "lsp": {
+    "clangd": {
+      "binary": {
+        "arguments": [
+          "--query-driver=**/*-elf-gcc,**/*-elf-g++",
+          "--background-index",
+        ],
+      },
+    },
+  },
+}

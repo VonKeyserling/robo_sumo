@@ -1,0 +1,26 @@
+[
+  {
+    "label": "Set idf.py to env",
+    "command": "source ~/Projects/esp-idf/export.sh",
+  },
+  {
+    "label": "Set target to  esp32",
+    "command": "idf.py set-target esp32",
+  },
+  {
+    "label": "Menuconfig",
+    "command": "idf.py menuconfig",
+  },
+  {
+    "label": "Compile",
+    "command": "idf.py build",
+  },
+  {
+    "label": "Flash monitor",
+    "command": "idf.py -p /dev/ttyUSB0 flash monitor",
+  },
+  {
+    "label": "Build & Get Intelisense",
+    "command": "source ~/Projects/esp-idf/export.sh && idf.py build && ln -s build/compile_commands.json .",
+  },
+]
